@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="backReg" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@InterfaceStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.messenger.minimessenger.LoginScreen">
+   <children>
+      <Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="800.0" stylesheets="@InterfaceStyle.css">
+         <children>
+            <AnchorPane fx:id="Reg_panel" layoutY="28.0" prefHeight="573.0" prefWidth="800.0" stylesheets="@InterfaceStyle.css">
+               <children>
+                  <Button fx:id="toChats" layoutX="14.0" layoutY="526.0" mnemonicParsing="false" onAction="#changeSceneToChats" prefHeight="33.0" prefWidth="85.0" text="Def" />
+                  <Button fx:id="createAccountButton" layoutX="237.0" layoutY="431.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="46.0" prefWidth="327.0" text="Create an account" textFill="#bfbfbf" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="431.0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="20.0" />
+                     </font></Button>
+                  <ImageView fitHeight="95.0" fitWidth="95.0" layoutX="116.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Mail-03.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="email" layoutX="237.0" layoutY="224.0" prefHeight="53.0" prefWidth="327.0" promptText="E-mail" AnchorPane.bottomAnchor="296.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="224.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font></TextField>
+                  <Button fx:id="loginButton" layoutX="237.0" layoutY="372.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="46.0" prefWidth="327.0" text="Login" textFill="#bfbfbf" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="372.0">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="20.0" />
+                     </font></Button>
+                  <ImageView fitHeight="64.0" fitWidth="63.0" layoutX="132.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../1200px-OOjs_UI_icon_lock.svg.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="password" layoutX="237.0" layoutY="292.0" prefHeight="53.0" prefWidth="327.0" promptText="Password" AnchorPane.bottomAnchor="228.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="292.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font></PasswordField>
+                  <Label fx:id="warningLabel" alignment="CENTER" layoutX="334.0" layoutY="195.0" prefHeight="17.0" prefWidth="132.0" textFill="RED" />
+                  <Label fx:id="Welcome" layoutX="156.0" layoutY="63.0" prefHeight="103.0" prefWidth="162.0" text="Welcome">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="37.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="330.0" layoutY="87.0" prefHeight="54.0" prefWidth="45.0" text="To" textFill="WHITE">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="389.0" layoutY="74.0" prefHeight="82.0" prefWidth="310.0" text="MiniMessenger" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Top0" layoutY="-5.0" prefHeight="33.0" prefWidth="800.0" stylesheets="@InterfaceStyle.css">
+               <children>
+                  <Button fx:id="closeButton" layoutX="776.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" prefHeight="20.0" prefWidth="20.0">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="minButton" layoutX="746.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleMinButtonAction" prefHeight="20.0" prefWidth="20.0" AnchorPane.leftAnchor="746.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="7.0">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
